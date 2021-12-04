@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.1.1](https://github.com/extra2000/petalinux-builder/compare/v1.1.0...v1.1.1) (2021-12-04)
+
+
+### Fixes
+
+* **selinux:** add `node_t:udp_socket node_bind` and `unreserved_port_t:udp_socket name_bind` ([9a5d52f](https://github.com/extra2000/petalinux-builder/commit/9a5d52f910f978dc35c0eb25d2b27e9f28908b91))
+
 ## [1.1.0](https://github.com/extra2000/petalinux-builder/compare/v1.0.1...v1.1.0) (2021-12-04)
 
 
