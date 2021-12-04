@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.1.0](https://github.com/extra2000/petalinux-builder/compare/v1.0.1...v1.1.0) (2021-12-04)
+
+
+### Features
+
+* **selinux:** add SELinux policy ([40a5d64](https://github.com/extra2000/petalinux-builder/commit/40a5d647c7820dd120613cda54091e5f1b692768))
+
+
+### Documentations
+
+* **README:** add instruction to load SELinux policy ([fa79a58](https://github.com/extra2000/petalinux-builder/commit/fa79a581c5a462bad69f5fad241d2d8d62febd56))
+
 ### [1.0.1](https://github.com/extra2000/petalinux-builder/compare/v1.0.0...v1.0.1) (2021-11-29)
 
 
