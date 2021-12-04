@@ -24,3 +24,8 @@ Build image:
 ```
 podman build -t extra2000/petalinux-builder .
 ```
+
+Load SELinux policy:
+```
+sudo semodule -i selinux/petalinux_builder.cil /usr/share/udica/templates/base_container.cil
+```
