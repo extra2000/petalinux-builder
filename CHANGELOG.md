@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.1.2](https://github.com/extra2000/petalinux-builder/compare/v1.1.1...v1.1.2) (2022-04-03)
+
+
+### Fixes
+
+* **selinux:** add more required permissions ([6fc73f8](https://github.com/extra2000/petalinux-builder/commit/6fc73f83ea2336391db504fbd503ecc6944d4e7d))
+
 ### [1.1.1](https://github.com/extra2000/petalinux-builder/compare/v1.1.0...v1.1.1) (2021-12-04)
 
 
