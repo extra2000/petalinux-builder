@@ -9,4 +9,6 @@
     (allow process unreserved_port_t ( udp_socket ( name_bind )))
     (allow process git_port_t ( tcp_socket ( name_connect )))
     (allow process proc_t ( file ( ioctl )))
+    (allow process kernel_t ( system ( module_request )))
+    (allow process unreserved_port_t ( tcp_socket ( name_bind )))
 )
