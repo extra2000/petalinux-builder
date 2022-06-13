@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/extra2000/petalinux-builder/compare/v1.1.2...v1.2.0) (2022-06-13)
+
+
+### Features
+
+* update Petalinux to 2022.1 ([6c63e33](https://github.com/extra2000/petalinux-builder/commit/6c63e330868cda78459dfd92b4a7ced1634ce5ec))
+
 ### [1.1.2](https://github.com/extra2000/petalinux-builder/compare/v1.1.1...v1.1.2) (2022-04-03)
 
 
