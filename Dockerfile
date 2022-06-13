@@ -14,7 +14,7 @@ COPY ./accept-eula.sh /opt/
 RUN dos2unix /opt/accept-eula.sh && chmod 755 /opt/accept-eula.sh
 
 USER builder
-COPY --chown=builder:builder ./installer/petalinux-v2021.2-final-installer.run /opt/installer/
+COPY --chown=builder:builder ./installer/petalinux-v2022.1-04191534-installer.run /opt/installer/
 
 WORKDIR /home/builder
 RUN /opt/accept-eula.sh

@@ -1,7 +1,7 @@
 #!/usr/bin/expect
 set timeout -1
 
-spawn /opt/installer/petalinux-v2021.2-final-installer.run --dir /home/builder/petalinux
+spawn /opt/installer/petalinux-v2022.1-04191534-installer.run --dir /home/builder/petalinux
 
 set timeout 600
 expect "Press Enter to display the license agreements"
