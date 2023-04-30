@@ -1,4 +1,4 @@
-(block petalinux_builder
+(block xilinx_toolkit_podman
     (blockinherit container)
     (allow process fusefs_t ( file ( relabelto )))
     (allow process ephemeral_port_t ( tcp_socket ( name_connect )))
@@ -12,4 +12,5 @@
     (allow process kernel_t ( system ( module_request )))
     (allow process unreserved_port_t ( tcp_socket ( name_bind )))
     (allow process container_file_t ( file ( unlink )))
+    (allow process xserver_t ( unix_stream_socket ( connectto )))
 )

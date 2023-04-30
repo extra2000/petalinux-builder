@@ -1,0 +1,3 @@
+FROM localhost/extra2000/xilinx-toolkit-base AS base
+
+COPY ./installer/tools/Xilinx /tools/Xilinx

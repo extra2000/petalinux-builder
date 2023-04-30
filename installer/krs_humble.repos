@@ -1,0 +1,56 @@
+repositories:
+  preception/vision_opencv:
+    type: git
+    url: https://github.com/ros-perception/vision_opencv
+    version: humble
+  perception/image_common:
+    type: git
+    url: https://github.com/ros-perception/image_common
+    version: ros2
+  perception/image_pipeline:
+    type: git
+    url: https://github.com/ros-acceleration/image_pipeline
+    version: ros2
+  tracing/tracetools_acceleration:
+    type: git
+    url: https://github.com/ros-acceleration/tracetools_acceleration
+    version: humble
+  firmware/acceleration_firmware_kr260:
+    type: zip
+    url: https://github.com/ros-acceleration/acceleration_firmware_kr260/releases/download/v1.1.1/acceleration_firmware_kr260.zip
+  acceleration/adaptive_component:
+    type: git
+    url: https://github.com/ros-acceleration/adaptive_component
+    version: humble
+  acceleration/ament_acceleration:
+    type: git
+    url: https://github.com/ros-acceleration/ament_acceleration
+    version: humble
+  acceleration/ament_cuda:
+    type: git
+    url: https://github.com/ros-acceleration/ament_cuda
+    version: main
+  acceleration/ament_vitis:
+    type: git
+    url: https://github.com/ros-acceleration/ament_vitis
+    version: main
+  acceleration/colcon-hardware-acceleration:
+    type: git
+    url: https://github.com/colcon/colcon-hardware-acceleration
+    version: main
+  acceleration/ros2_kria:
+    type: git
+    url: https://github.com/ros-acceleration/ros2_kria
+    version: main
+  acceleration/ros2acceleration:
+    type: git
+    url: https://github.com/ros-acceleration/ros2acceleration
+    version: humble
+  acceleration/vitis_common:
+    type: git
+    url: https://github.com/ros-acceleration/vitis_common
+    version: master
+  acceleration/acceleration_examples:
+    type: git
+    url: https://github.com/ros-acceleration/acceleration_examples
+    version: main
