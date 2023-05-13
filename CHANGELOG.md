@@ -1,5 +1,33 @@
 # Changelog
 
+## [2.0.0](https://github.com/extra2000/xilinx-toolkit/compare/v1.2.0...v2.0.0) (2023-05-13)
+
+
+### ⚠ BREAKING CHANGES
+
+* installation instructions have major changes
+
+### Features
+
+* add Vitis, ROS2, and KRS ([d8ae88b](https://github.com/extra2000/xilinx-toolkit/commit/d8ae88b70ea5b5e73d2c3ff8a4d093ceb6f14550))
+
+
+### Documentations
+
+* **README:** remove AppVeyor badge ([3883e8f](https://github.com/extra2000/xilinx-toolkit/commit/3883e8ff8985074bbae7e75e10656d6584919ff2))
+
+
+### Continuous Integrations
+
+* add Github Action ([ac32692](https://github.com/extra2000/xilinx-toolkit/commit/ac326926ec5c31b517b23fb3d6273665f66c98c9))
+* remove AppVeyor ([85790a2](https://github.com/extra2000/xilinx-toolkit/commit/85790a213e1512d70caace8f487b07b32af43c4a))
+
+
+### Fixes
+
+* **selinux:** add `allow petalinux_builder.process container_file_t:file unlink` ([9946731](https://github.com/extra2000/xilinx-toolkit/commit/9946731b9901d298bff078013e5970f8846392ea))
+* **selinux:** add `module_request` and `name_bind` ([ae530cb](https://github.com/extra2000/xilinx-toolkit/commit/ae530cb30799adf3943c8421f97979f976687735))
+
 ## [1.2.0](https://github.com/extra2000/petalinux-builder/compare/v1.1.2...v1.2.0) (2022-06-13)
 
 
