@@ -9,13 +9,13 @@ Xilinx toolkit image.
 
 ## System Requirements
 
-* Free Disk Space: at least 500GB.
-* Podman 4.4.1 and above.
+* Free Disk Space: at least 250GB.
+* Podman 4.5.0 and above.
 
 
 ## Instructions
 
-* [How to build?](docs/building.md)
-* [How to test?](docs/testing.md)
-* [How to cleanup?](docs/cleanup.md)
-* [How to import and export image?](docs/export-import-images.md)
+* [Building Xilinx Toolkit Image](docs/building-image.md)
+* Vitis and PetaLinux Installations:
+    * [v2022.1](docs/xilinx-installations/v2022.1.md)
+* [Testing](docs/testing.md)
