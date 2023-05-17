@@ -62,6 +62,11 @@ rviz2
 ```
 
 
+## More Testings
+
+* [ROS 2 Perception Node](testings/ros-2-perception-node.md)
+
+
 ## Cleaning Up
 
 To remove X11 forwarding permission:
