@@ -70,13 +70,18 @@ RUN sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.ke
         pytest-repeat \
         pytest-rerunfailures
 
+ENV ROS_PYTHON_VERSION=3
+ENV ROS_DISTRO=humble
+
+RUN mkdir -pv /home/builder/ros2_humble/src
+COPY ./installer/ros2-humble.repos /home/builder/ros2_humble/ros2-humble.repos
+
 WORKDIR /home/builder/ros2_humble
-RUN mkdir -pv src \
-    && vcs import --input https://raw.githubusercontent.com/ros2/ros2/humble/ros2.repos src \
+RUN vcs import --input ./ros2-humble.repos src \
     && sudo rosdep init \
     && rosdep fix-permissions \
-    && sudo rosdep update \
-    && sudo rosdep install --from-paths src --ignore-src -y --skip-keys "fastcdr rti-connext-dds-6.0.1 urdfdom_headers" \
+    && rosdep update \
+    && rosdep install --from-paths src --ignore-src -y --skip-keys "fastcdr rti-connext-dds-6.0.1 urdfdom_headers" \
     && colcon build --symlink-install
 
 # --- ROS2 installation ends ---
