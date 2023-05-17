@@ -1,5 +1,21 @@
 # Changelog
 
+## [3.0.0](https://github.com/extra2000/xilinx-toolkit/compare/v2.0.0...v3.0.0) (2023-05-17)
+
+
+### ⚠ BREAKING CHANGES
+
+* Dockerfile has been restructured and Xilinx tools will be installed as volume.
+
+### Documentations
+
+* re-structure docs with latest instructions ([f87cbbb](https://github.com/extra2000/xilinx-toolkit/commit/f87cbbbea5ada1d6bc73288379cc347f177c2a60))
+
+
+### Code Refactoring
+
+* restructure Dockerfile and install Xilinx tools as volume ([221c58e](https://github.com/extra2000/xilinx-toolkit/commit/221c58efeb8350939e8c0133c6ffc15e3db11aa1))
+
 ## [2.0.0](https://github.com/extra2000/xilinx-toolkit/compare/v1.2.0...v2.0.0) (2023-05-13)
 
 
