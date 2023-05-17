@@ -112,4 +112,20 @@ RUN sudo apt update && sudo apt install -y \
     pv \
     libboost-all-dev
 
+# Install Gazebo
+RUN curl -sSL http://get.gazebosim.org | sh
+
+RUN mkdir -pv /home/builder/gazebo_ros_pkgs/src
+WORKDIR /home/builder/gazebo_ros_pkgs
+
+COPY ./installer/gazebo_ros_pkgs.repos /home/builder/gazebo_ros_pkgs/gazebo_ros_pkgs.repos
+
+RUN vcs import --input gazebo_ros_pkgs.repos src \
+    && /bin/bash -c "\
+        source /home/builder/ros2_humble/install/setup.bash \
+        && rosdep update \
+        && rosdep install --from-paths src --ignore-src -r -y \
+        && colcon build --symlink-install \
+"
+
 WORKDIR /home/builder
