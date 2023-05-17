@@ -1,5 +1,22 @@
 # Changelog
 
+## [3.1.0](https://github.com/extra2000/xilinx-toolkit/compare/v3.0.0...v3.1.0) (2023-05-17)
+
+
+### Features
+
+* **dockerfile:** add Gazebo installations ([d7a23cb](https://github.com/extra2000/xilinx-toolkit/commit/d7a23cb3fc7c11acc906d943d3932c34aef18098))
+
+
+### Code Refactoring
+
+* **dockerfile:** externalize ROS2 Humble Repos ([d7a70e6](https://github.com/extra2000/xilinx-toolkit/commit/d7a70e6f5d4ae207a2d8e56f96ee63dd22703b7a))
+
+
+### Documentations
+
+* **testing:** add ROS 2 Perception Node example ([d067354](https://github.com/extra2000/xilinx-toolkit/commit/d067354503b4001e3fa94b9452b19939b35c7a40))
+
 ## [3.0.0](https://github.com/extra2000/xilinx-toolkit/compare/v2.0.0...v3.0.0) (2023-05-17)
 
 
