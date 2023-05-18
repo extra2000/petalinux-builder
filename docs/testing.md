@@ -44,20 +44,20 @@ petalinux-config -h
 
 Execute ROS2 talker demo:
 ```
-source ~/ros2_humble/install/setup.bash
+source /opt/ros/humble/setup.bash
 ros2 run demo_nodes_cpp talker
 ```
 
 Start another terminal from the same container and then execute ROS2 listener demo:
 ```
 podman exec -it toolkit bash
-source ~/ros2_humble/install/setup.bash
+source /opt/ros/humble/setup.bash
 ros2 run demo_nodes_py listener
 ```
 
 To test GUI app:
 ```
-source ~/ros2_humble/install/setup.bash
+source /opt/ros/humble/setup.bash
 rviz2
 ```
 
