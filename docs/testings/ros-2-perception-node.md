@@ -18,6 +18,7 @@ podman run -it --rm \
     --network=host \
     --userns="keep-id:uid=1000,gid=1000" \
     --security-opt label=type:xilinx_toolkit_podman.process \
+    --name=ros2 \
     localhost/extra2000/xilinx-toolkit:latest \
     bash
 ```
@@ -34,7 +35,7 @@ rm -rf src/image_proc src/tracetools_image_pipeline src/vitis_common src/tracing
 
 Source `gazebo_ros_pkgs` layer and then build:
 ```
-source ~/gazebo_ros_pkgs/install/setup.bash
+source /opt/ros/humble/setup.bash
 colcon build
 ```
 
@@ -42,4 +43,11 @@ Source `kria_ros_perception` layer and then launch example:
 ```
 source ~/kria_ros_perception/install/setup.bash
 ros2 launch perception_2nodes simulation.launch.py
+```
+
+Open a new terminal of the same container, and execute `rqt`:
+```
+podman exec -it ros2 bash
+source ~/kria_ros_perception/install/setup.bash
+rqt
 ```
