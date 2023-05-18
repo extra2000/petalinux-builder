@@ -1,5 +1,18 @@
 # Changelog
 
+## [3.2.0](https://github.com/extra2000/xilinx-toolkit/compare/v3.1.0...v3.2.0) (2023-05-18)
+
+
+### Features
+
+* **dockerfile:** upgrade to Ubuntu 22.04 and no source installations ([45e67e2](https://github.com/extra2000/xilinx-toolkit/commit/45e67e26049166866702d36ad0c16cc47bec3352))
+
+
+### Documentations
+
+* add Xilinx `v2022.2` installations ([a0efcf5](https://github.com/extra2000/xilinx-toolkit/commit/a0efcf5cb24bcd762bfedac3256ebf2f283874b2))
+* **docs/testings/ros-2-perception-node.md:** add `rqt` example ([80c6c5d](https://github.com/extra2000/xilinx-toolkit/commit/80c6c5d1b02a1cd60ee95e2a0b794e9595dc412f))
+
 ## [3.1.0](https://github.com/extra2000/xilinx-toolkit/compare/v3.0.0...v3.1.0) (2023-05-17)
 
 
