@@ -1,5 +1,22 @@
 # Changelog
 
+## [4.0.0](https://github.com/extra2000/yocto-toolkit/compare/v3.2.0...v4.0.0) (2023-07-19)
+
+
+### ⚠ BREAKING CHANGES
+
+* this project has been renamed from `xilinx-toolkit` to `yocto-toolkit`
+
+### Documentations
+
+* add Xilinx `v2023.3` installations ([2f51c0b](https://github.com/extra2000/yocto-toolkit/commit/2f51c0b9569a37b91c4bf00fa57e01e769033b78))
+* **xilinx-installations:** add instructions missing instructions for creating volume ([3af26df](https://github.com/extra2000/yocto-toolkit/commit/3af26dfd51235c7b4887a3a6b9906e76aa6af8c8))
+
+
+### Code Refactoring
+
+* rename this project from `xilinx-toolkit` to `yocto-toolkit` ([9179753](https://github.com/extra2000/yocto-toolkit/commit/9179753c3fde726283d16913597a6fd6bbfcc090))
+
 ## [3.2.0](https://github.com/extra2000/xilinx-toolkit/compare/v3.1.0...v3.2.0) (2023-05-18)
 
 
