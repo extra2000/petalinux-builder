@@ -19,4 +19,5 @@ Xilinx toolkit image.
 * Vitis and PetaLinux Installations:
     * [v2022.1](docs/xilinx-installations/v2022.1.md)
     * [v2022.2](docs/xilinx-installations/v2022.2.md)
+    * [v2023.1](docs/xilinx-installations/v2023.1.md)
 * [Testing](docs/testing.md)
