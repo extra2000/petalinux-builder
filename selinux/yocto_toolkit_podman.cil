@@ -1,4 +1,4 @@
-(block xilinx_toolkit_podman
+(block yocto_toolkit_podman
     (blockinherit container)
     (allow process fusefs_t ( file ( relabelto )))
     (allow process ephemeral_port_t ( tcp_socket ( name_connect )))

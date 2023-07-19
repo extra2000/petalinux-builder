@@ -1,4 +1,4 @@
-# Building Xilinx Toolkit Image
+# Building Yocto Toolkit Image
 
 
 ## Prerequisites
@@ -11,7 +11,7 @@ chcon -R -t container_file_t ./installer
 Load SELinux policy:
 ```
 sudo semodule \
-    -i selinux/xilinx_toolkit_podman.cil \
+    -i selinux/yocto_toolkit_podman.cil \
     /usr/share/udica/templates/base_container.cil
 ```
 
@@ -20,5 +20,5 @@ sudo semodule \
 
 Execute the following command to build image:
 ```
-podman build -t extra2000/xilinx-toolkit .
+podman build -t extra2000/yocto-toolkit .
 ```

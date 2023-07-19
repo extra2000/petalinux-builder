@@ -1,10 +1,10 @@
-# xilinx-toolkit
+# yocto-toolkit
 
 | License | Versioning |
 | ------- | ---------- |
 | [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) | [![semantic-release: angular](https://img.shields.io/badge/semantic--release-angular-e10079?logo=semantic-release)](https://github.com/semantic-release/semantic-release) |
 
-Xilinx toolkit image.
+Yocto toolkit image.
 
 
 ## System Requirements
@@ -15,8 +15,8 @@ Xilinx toolkit image.
 
 ## Instructions
 
-* [Building Xilinx Toolkit Image](docs/building-image.md)
-* Vitis and PetaLinux Installations:
+* [Building Yocto Toolkit Image](docs/building-image.md)
+* Vitis and PetaLinux Installations (optional, only required for developing Xilinx target devices):
     * [v2022.1](docs/xilinx-installations/v2022.1.md)
     * [v2022.2](docs/xilinx-installations/v2022.2.md)
     * [v2023.1](docs/xilinx-installations/v2023.1.md)

@@ -17,9 +17,9 @@ podman run -it --rm \
     --device=/dev/dri \
     --network=host \
     --userns="keep-id:uid=1000,gid=1000" \
-    --security-opt label=type:xilinx_toolkit_podman.process \
+    --security-opt label=type:yocto_toolkit_podman.process \
     --name=ros2 \
-    localhost/extra2000/xilinx-toolkit:latest \
+    localhost/extra2000/yocto-toolkit:latest \
     bash
 ```
 

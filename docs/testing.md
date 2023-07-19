@@ -16,9 +16,9 @@ podman run -it --rm \
     --network=host \
     --userns="keep-id:uid=1000,gid=1000" \
     --name=toolkit \
-    --security-opt label=type:xilinx_toolkit_podman.process \
+    --security-opt label=type:yocto_toolkit_podman.process \
     -v xilinx-tools-v2022-1:/tools/Xilinx:ro \
-    localhost/extra2000/xilinx-toolkit bash
+    localhost/extra2000/yocto-toolkit bash
 ```
 
 
