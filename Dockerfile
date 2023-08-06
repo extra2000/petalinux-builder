@@ -55,7 +55,11 @@ RUN sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.ke
     && sudo apt update && sudo apt install -y \
         ros-humble-desktop \
         ros-dev-tools \
-        ros-humble-rmw-cyclonedds-cpp
+        ros-humble-rmw-cyclonedds-cpp \
+        ros-humble-tracetools-launch \
+        ros-humble-tracetools-image-pipeline \
+        lttng-tools \
+        lttng-modules-dkms
 
 # Install Gazebo
 RUN curl -sSL http://get.gazebosim.org | sh \
