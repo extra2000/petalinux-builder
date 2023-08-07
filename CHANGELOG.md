@@ -1,5 +1,23 @@
 # Changelog
 
+## [4.1.0](https://github.com/extra2000/yocto-toolkit/compare/v4.0.0...v4.1.0) (2023-08-07)
+
+
+### Features
+
+* **Dockerfile:** add all dependencies for AMD Kria ROS2 Perception example ([8bb22a8](https://github.com/extra2000/yocto-toolkit/commit/8bb22a892556980cc88294ede411583a786c0ecf))
+
+
+### Documentations
+
+* **testing:** add `ROS_DOMAIN_ID` with ID 10 instead of default ID 0 ([52ad7a2](https://github.com/extra2000/yocto-toolkit/commit/52ad7a2bcfd7c98c520b7c8c9c3b2691bafcc940))
+* **testing:** update instructions for AMD Kria ROS2 Perception Node ([016838f](https://github.com/extra2000/yocto-toolkit/commit/016838fd2a6ca994f38fc159d4b5719fcafac393))
+
+
+### Fixes
+
+* **selinux:** allow `dri_device_t:chr_file { getattr ioctl map read write }`, `lltng_port_t:tcp_socket name_bind`, `tmpfs_t:file map`, `unreserved_port_t:tcp_socket name_connect` ([0c2f376](https://github.com/extra2000/yocto-toolkit/commit/0c2f376fc32b2b1368d06073628d0832eb1a1d29))
+
 ## [4.0.0](https://github.com/extra2000/yocto-toolkit/compare/v3.2.0...v4.0.0) (2023-07-19)
 
 
