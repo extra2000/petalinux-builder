@@ -45,14 +45,14 @@ petalinux-config -h
 Execute ROS2 talker demo:
 ```
 source /opt/ros/humble/setup.bash
-ros2 run demo_nodes_cpp talker
+ROS_DOMAIN_ID=10 ros2 run demo_nodes_cpp talker
 ```
 
 Start another terminal from the same container and then execute ROS2 listener demo:
 ```
 podman exec -it toolkit bash
 source /opt/ros/humble/setup.bash
-ros2 run demo_nodes_py listener
+ROS_DOMAIN_ID=10 ros2 run demo_nodes_py listener
 ```
 
 To test GUI app:
