@@ -40,33 +40,6 @@ petalinux-config -h
 ```
 
 
-## ROS2 Testing
-
-Execute ROS2 talker demo:
-```
-source /opt/ros/humble/setup.bash
-ROS_DOMAIN_ID=10 ros2 run demo_nodes_cpp talker
-```
-
-Start another terminal from the same container and then execute ROS2 listener demo:
-```
-podman exec -it toolkit bash
-source /opt/ros/humble/setup.bash
-ROS_DOMAIN_ID=10 ros2 run demo_nodes_py listener
-```
-
-To test GUI app:
-```
-source /opt/ros/humble/setup.bash
-rviz2
-```
-
-
-## More Testings
-
-* [ROS 2 Perception Node](testings/ros-2-perception-node.md)
-
-
 ## Cleaning Up
 
 To remove X11 forwarding permission:
