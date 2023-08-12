@@ -1,5 +1,16 @@
 # Changelog
 
+## [5.0.0](https://github.com/extra2000/yocto-toolkit/compare/v4.1.0...v5.0.0) (2023-08-12)
+
+
+### ⚠ BREAKING CHANGES
+
+* **Dockerfile:** ROS2 packages have moved to [extra2000/ros2-gazebo11-classic](https://github.com/extra2000/ros2-gazebo11-classic) and KRS dependencies have been removed.
+
+### Code Refactoring
+
+* **Dockerfile:** remove ROS2 and KRS dep ([f22e40b](https://github.com/extra2000/yocto-toolkit/commit/f22e40b87b62aedaea73f0aa543e0add1739515b))
+
 ## [4.1.0](https://github.com/extra2000/yocto-toolkit/compare/v4.0.0...v4.1.0) (2023-08-07)
 
 
