@@ -43,6 +43,7 @@ RUN apt update \
         mesa-common-dev \
         liblz4-tool \
         file \
+        iproute2 \
     && useradd --create-home --shell /bin/bash builder \
     && usermod -aG sudo builder \
     && echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers \
