@@ -20,6 +20,7 @@ RUN apt update \
         python3-git \
         python3-jinja2 \
         python3-subunit \
+        python3-virtualenv \
         pylint \
         less \
         texinfo \
