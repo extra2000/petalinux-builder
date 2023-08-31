@@ -45,6 +45,8 @@ RUN apt update \
         liblz4-tool \
         file \
         iproute2 \
+        pkg-config \
+        libssl-dev \
     && useradd --create-home --shell /bin/bash builder \
     && usermod -aG sudo builder \
     && echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers \
@@ -52,6 +54,11 @@ RUN apt update \
     && ln --symbolic /bin/bash /bin/sh
 
 USER builder
+
+# Install rust and Cargo Bitbake
+RUN curl https://sh.rustup.rs -sSf | sh -s -- -y \
+    && source $HOME/.cargo/env \
+    && cargo install --locked cargo-bitbake
 
 # Fix git's "error setting certificate verify locations"
 RUN git config --global http.sslCAinfo "/etc/ssl/certs/ca-certificates.crt"
