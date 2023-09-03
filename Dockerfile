@@ -58,7 +58,8 @@ USER builder
 # Install rust and Cargo Bitbake
 RUN curl https://sh.rustup.rs -sSf | sh -s -- -y \
     && source $HOME/.cargo/env \
-    && cargo install --locked cargo-bitbake
+    && cargo install --locked cargo-bitbake \
+    && rustup component add clippy
 
 # Fix git's "error setting certificate verify locations"
 RUN git config --global http.sslCAinfo "/etc/ssl/certs/ca-certificates.crt"
