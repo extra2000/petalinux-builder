@@ -47,6 +47,11 @@ RUN apt update \
         iproute2 \
         pkg-config \
         libssl-dev \
+        libacl1 \
+        libsdl1.2-dev \
+        build-essential \
+        gcc \
+        graphviz \
     && useradd --create-home --shell /bin/bash builder \
     && usermod -aG sudo builder \
     && echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers \
