@@ -52,6 +52,17 @@ RUN apt update \
         build-essential \
         gcc \
         graphviz \
+        libxtst6 \
+        libxi6 \
+        libtinfo5 \
+        bc \
+        xterm \
+        autoconf \
+        libtool \
+        rsync \
+        gcc-multilib \
+        lsb-release \
+        libncurses-dev \
     && useradd --create-home --shell /bin/bash builder \
     && usermod -aG sudo builder \
     && echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers \
