@@ -20,4 +20,5 @@ Yocto toolkit image.
     * [v2022.1](docs/xilinx-installations/v2022.1.md)
     * [v2022.2](docs/xilinx-installations/v2022.2.md)
     * [v2023.1](docs/xilinx-installations/v2023.1.md)
+    * [v2023.2](docs/xilinx-installations/v2023.2.md)
 * [Testing](docs/testing.md)
