@@ -1,5 +1,39 @@
 # Changelog
 
+## [5.1.0](https://github.com/extra2000/yocto-toolkit/compare/v5.0.0...v5.1.0) (2024-07-10)
+
+
+### Features
+
+* **dockerfile:** add Java developments ([536dd12](https://github.com/extra2000/yocto-toolkit/commit/536dd12d8d341c8ffd10b958dc77791c5735be3f))
+* **Dockerfile:** add linter for Rust ([a37ce58](https://github.com/extra2000/yocto-toolkit/commit/a37ce58d90730d132a8a6844856558cb93de2d10))
+* **Dockerfile:** add Rust and `cargo-bitbake` ([59652d0](https://github.com/extra2000/yocto-toolkit/commit/59652d0f712536fa0e2955486ab2c016f1b0e8cf))
+* **Dockerfile:** auto source AMD Xilinx tools ([08510c5](https://github.com/extra2000/yocto-toolkit/commit/08510c57a3da39a7233ffec789be9fd81f2027d4))
+
+
+### Fixes
+
+* **Dockerfile:** add `iproute2` required by `runqemu` to use `tap0` interface ([32ded97](https://github.com/extra2000/yocto-toolkit/commit/32ded9776417f6fffe94a979e0e6db79cd2d7b74))
+* **Dockerfile:** add `python3-virtualenv` required for Yocto Toaster deployment ([166fb94](https://github.com/extra2000/yocto-toolkit/commit/166fb94b3469576a86e29bfea37d66256b5d5ce8))
+* **Dockerfile:** add dependencies required by Yocto taskdep command ([9c20478](https://github.com/extra2000/yocto-toolkit/commit/9c20478505049f74c5afedd6a8355330ad9a31f7))
+* **Dockerfile:** add missing packages required by Xilinx v2023.2 ([73a7782](https://github.com/extra2000/yocto-toolkit/commit/73a778229a640ce3b164edcdb10bbf45cab00d59))
+* **Dockerfile:** add missing packages required by Yocto Mickledore and Nanbield ([33b88d1](https://github.com/extra2000/yocto-toolkit/commit/33b88d19beee4c75311185848204332bd141a519))
+
+
+### Documentations
+
+* **xilinx:** add Xilinx v2023.2 installations ([105495c](https://github.com/extra2000/yocto-toolkit/commit/105495ce28d74a55348be5fd0de50bf463169788))
+
+
+### Maintenance
+
+* **gitignore:** improve paths ([ac212b1](https://github.com/extra2000/yocto-toolkit/commit/ac212b1196e763ebdd442ce5c7096b705ab4f9d2))
+
+
+### Continuous Integrations
+
+* **semantic-release:** lock version to `v23.0.8` ([517095b](https://github.com/extra2000/yocto-toolkit/commit/517095b81b7f518c6036d122bce186d226e05572))
+
 ## [5.0.0](https://github.com/extra2000/yocto-toolkit/compare/v4.1.0...v5.0.0) (2023-08-12)
 
 
