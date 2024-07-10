@@ -84,8 +84,6 @@ RUN curl https://sh.rustup.rs -sSf | sh -s -- -y \
 RUN curl -s "https://get.sdkman.io" | bash \
     && source /home/builder/.sdkman/bin/sdkman-init.sh \
     && sdk install java 21.0.2-graal \
-    && sdk install ant 1.10.13 \
-    && sdk install maven 3.9.6 \
     && sdk install gradle 8.6
 
 # Fix git's "error setting certificate verify locations"
@@ -93,12 +91,12 @@ RUN git config --global http.sslCAinfo "/etc/ssl/certs/ca-certificates.crt"
 
 # Auto source AMD Xilinx tools
 RUN echo $' \n\
-if test -f /tools/Xilinx/Vivado/2023.2/settings64.sh; then \n\
-  source /tools/Xilinx/Vivado/2023.2/settings64.sh \n\
+if test -f /tools/Xilinx/Vivado/2024.1/settings64.sh; then \n\
+  source /tools/Xilinx/Vivado/2024.1/settings64.sh \n\
 fi \n\
 
-if test -f /tools/Xilinx/PetaLinux/2023.2/tool/settings.sh; then \n\
-  source /tools/Xilinx/PetaLinux/2023.2/tool/settings.sh \n\
+if test -f /tools/Xilinx/PetaLinux/2024.1/tool/settings.sh; then \n\
+  source /tools/Xilinx/PetaLinux/2024.1/tool/settings.sh \n\
 fi' >> /home/builder/.bashrc
 
 WORKDIR /home/builder
