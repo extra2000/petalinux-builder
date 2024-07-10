@@ -91,4 +91,14 @@ RUN curl -s "https://get.sdkman.io" | bash \
 # Fix git's "error setting certificate verify locations"
 RUN git config --global http.sslCAinfo "/etc/ssl/certs/ca-certificates.crt"
 
+# Auto source AMD Xilinx tools
+RUN echo $' \n\
+if test -f /tools/Xilinx/Vivado/2023.2/settings64.sh; then \n\
+  source /tools/Xilinx/Vivado/2023.2/settings64.sh \n\
+fi \n\
+
+if test -f /tools/Xilinx/PetaLinux/2023.2/tool/settings.sh; then \n\
+  source /tools/Xilinx/PetaLinux/2023.2/tool/settings.sh \n\
+fi' >> /home/builder/.bashrc
+
 WORKDIR /home/builder
